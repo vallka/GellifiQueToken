@@ -38,8 +38,15 @@ module.exports = {
       host: "127.0.0.1",
       port: 9545,
       network_id: "*", // Match any network id
+      gas: 6999999+1,
+      gasPrice: 2
+    },
+    development2: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*", // Match any network id
       gas: 3000000,
-      gasPrice: 21
+      gasPrice: 2000
     },
     ropsten: {
       //provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://ropsten.infura.io/v3/" + process.env.INFURA_API_KEY),
